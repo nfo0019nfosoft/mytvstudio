@@ -35,10 +35,11 @@ body{
     align-items:center;
 }
 .logo{
-    height:50px;
-    width:160px;        /* fixed width required */
-    object-fit:cover;   /* enables cropping */
-    object-position:center;
+    height:70px;
+    width: 70px;
+      /* fixed width required */
+     /* enables cropping */
+   
 }
 
 .nav-links{
