@@ -26,15 +26,19 @@ body{
     box-shadow:0 5px 20px rgba(0,0,0,0.6);
 }
 
+
 .nav-container{
+    max-width:1200px;
+    margin:0 auto;  /* CENTER CONTENT */
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 .logo{
-    height:80px;
-    width:auto;
-    object-fit:contain;
+    height:50px;
+    width:160px;        /* fixed width required */
+    object-fit:cover;   /* enables cropping */
+    object-position:center;
 }
 
 .nav-links{
@@ -83,6 +87,9 @@ body{
 
 /* MOBILE NAV */
 @media(max-width:768px){
+    .nav-container{
+        padding:0 10px;
+    }
     .nav-links{
         position:absolute;
         top:80px;
@@ -103,6 +110,10 @@ body{
         display:flex;
     }
 }
+
+
+
+
 
 /* HERO */
 .hero{
@@ -293,7 +304,15 @@ body{
         opacity:1 !important;
     }
 }
+.categories{
+    padding:100px 20px;
+    background:#0f0f12;
+}
 
+.categories-container{
+    max-width:1200px;   /* controls content width */
+    margin:auto;        /* centers content */
+}
 
 
 
@@ -636,7 +655,7 @@ body{
 /* LOGO */
 .footer-logo{
     width:150px;
-    margin-bottom:15px;
+    margin-bottom:-10px;
 }
 
 /* HEADINGS */
@@ -778,7 +797,7 @@ body{
 
 
 
-/* FLOATING CONTAINER */
+/* FLOATING CONTACT CONTAINER */
 
 .floating-contact{
     position:fixed;
@@ -787,32 +806,32 @@ body{
     display:flex;
     flex-direction:column;
     gap:15px;
-    z-index:999;
+    z-index:99999;
 }
 
-/* COMMON STYLE */
+/* COMMON BUTTON STYLE */
 
 .floating-contact a{
-    width:50px;
-    height:50px;
+    width:55px;
+    height:55px;
     display:flex;
     align-items:center;
     justify-content:center;
     border-radius:50%;
     color:white;
-    font-size:20px;
+    font-size:22px;
     text-decoration:none;
     box-shadow:0 5px 15px rgba(0,0,0,0.4);
     transition:0.3s ease;
 }
 
-/* PHONE */
+/* PHONE BUTTON */
 
 .float-phone{
-    background:#ff2e2e;
+    background:#25D366;
 }
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 
 .float-whatsapp{
     background:#25D366;
@@ -827,7 +846,7 @@ body{
 /* PULSE ANIMATION */
 
 @keyframes pulse{
-    0%{ box-shadow:0 0 0 0 rgba(255,46,46,0.6); }
+    0%{ box-shadow:0 0 0 0 25d366; }
     70%{ box-shadow:0 0 0 15px rgba(255,46,46,0); }
     100%{ box-shadow:0 0 0 0 rgba(255,46,46,0); }
 }
@@ -836,10 +855,93 @@ body{
     animation:pulse 2s infinite;
 }
 
-/* MOBILE ONLY */
+/* MOBILE OPTIMIZATION */
 
-@media(min-width:992px){
-    .floating-contact{
-        display:none;
+@media(max-width:768px){
+
+.floating-contact{
+    bottom:15px;
+    right:15px;
+}
+
+.floating-contact a{
+    width:60px;
+    height:60px;
+    font-size:24px;
+}
+
+}
+
+
+/* BODY */
+
+body{
+    background:#0f0f12;
+    position:relative;
+    overflow-x:hidden;
+}
+
+/* BACKGROUND ICON CONTAINER */
+
+.bg-animation{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:0;
+}
+
+.bg-animation i{
+    position:absolute;
+    color:rgba(255,255,255,0.03);  /* soft white */
+    font-size:70px;
+    animation:float 15s linear infinite;
+}
+
+/* RANDOM POSITIONS */
+
+.bg-animation i:nth-child(1){
+    top:10%;
+    left:15%;
+    animation-duration:18s;
+}
+
+.bg-animation i:nth-child(2){
+    top:50%;
+    left:70%;
+    animation-duration:22s;
+}
+
+.bg-animation i:nth-child(3){
+    top:80%;
+    left:30%;
+    animation-duration:20s;
+}
+
+.bg-animation i:nth-child(4){
+    top:25%;
+    left:85%;
+    animation-duration:25s;
+}
+
+.bg-animation i:nth-child(5){
+    top:65%;
+    left:10%;
+    animation-duration:19s;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+    50%{
+        transform:translateY(-40px) rotate(10deg);
+    }
+    100%{
+        transform:translateY(0px) rotate(0deg);
     }
 }

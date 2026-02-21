@@ -377,5 +377,121 @@ animatedElements.forEach(el => scrollObserver.observe(el));
 
 </script>
 
+
+
+
+
+
+
+<section class="footer">
+
+    <div class="footer-wrapper">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-col fade-left">
+            <img src="img/logo2.png" class="footer-logo">
+            <p>
+                Empowering creators with monetization,
+                brand collaborations & digital growth.
+            </p>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-col fade-up">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="channels.html">Channels Directory</a></li>
+                <li><a href="creators.html">Creators Join</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="brand.html">Brand Collaboration</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col fade-up">
+            <h3 class="footer-heading">Contact</h3>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    Flat No. 7, Bharat Nagar Colony,
+                    Road No.1, RL Nagar, Rampally,
+                    Medchal – 501301
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 91548 26565</span>
+            </div>
+             <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>tvmy6635@gmail.com</span>
+            </div>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="footer-col fade-right">
+            <h3 class="footer-heading">Follow Us</h3>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 My TV Studio. All Rights Reserved.
+    </div>
+
+</section>
+
+<script>
+const footerItems = document.querySelectorAll(".fade-left, .fade-right, .fade-up");
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{ threshold:0.3 });
+
+footerItems.forEach(el=>observer.observe(el));
+</script>
+
+
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-contact">
+
+    <!-- Phone -->
+    <a href="tel:+919154826565" class="float-phone">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919154826565" target="_blank" class="float-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</div>
+
+
+
+
+<div class="bg-animation">
+    <i class="fa-solid fa-camera"></i>
+    <i class="fa-solid fa-video"></i>
+    <i class="fa-solid fa-photo-film"></i>
+    <i class="fa-solid fa-camera-retro"></i>
+    <i class="fa-solid fa-film"></i>
+</div>
+
+
 </body>
 </html>
