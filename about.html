@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TV Studio</title>
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+        <img src="img/logo2.png" class="logo" alt="Logo">
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="channels.html">Channels Directory</a>
+            <a href="creators.html">Creators Join</a>
+            <a href="about.html">About Us</a>
+            <a href="brand.html">Brand Collaboration</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+</header>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
+
+
+
+
+
+
+
+<!-- ===============================
+        ABOUT SECTION
+=================================-->
+
+<section class="about-section">
+
+    <div class="about-container">
+
+        <!-- HEADING -->
+        <div class="about-header slide-left">
+            <h2 class="about-title">ABOUT TV STUDIO</h2>
+            <div class="leader-line"></div>
+            
+        </div>
+
+        <!-- CONTENT + IMAGE -->
+        <div class="about-content-wrapper">
+
+            <!-- LEFT CONTENT -->
+            <div class="about-content slide-left">
+                <h3 class="about-subtitle">Our Company Story</h3>
+                <p>
+                    TV Studio was founded with a vision to empower creators,
+                    storytellers, and digital innovators. From humble beginnings,
+                    we have grown into a dynamic media powerhouse supporting
+                    content monetization, strategic partnerships, and brand growth.
+                </p>
+                <p>
+                    Our mission is to provide scalable revenue systems,
+                    premium collaborations, and advanced analytics insights
+                    that help creators unlock their true potential in the
+                    evolving digital ecosystem.
+                </p>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="about-image slide-right">
+                <img src="img/about.png" alt="About TV Studio">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const elements = document.querySelectorAll(".slide-left, .slide-right");
+
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    },{threshold:0.3});
+
+    elements.forEach(el=>observer.observe(el));
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+<!-- ===============================
+        VISION & MISSION SECTION
+=================================-->
+
+<section class="vm-section">
+
+    <div class="vm-container">
+
+        <div class="vm-box slide-left">
+            <div class="vm-icon">
+                <i class="fas fa-eye"></i>
+            </div>
+            <h3>OUR VISSION</h3>
+            <p>
+                To redefine the future of digital media by empowering creators
+                with innovation, technology, and limitless growth opportunities.
+                We envision a world where creativity meets scalable success.
+            </p>
+        </div>
+
+        <div class="vm-box slide-right">
+            <div class="vm-icon">
+                <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>OUR MISSION</h3>
+            <p>
+                To provide strategic partnerships, advanced analytics,
+                and sustainable monetization systems that help creators
+                transform passion into powerful digital enterprises.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="leader-section">
+
+    <div class="leader-container">
+
+        <!-- HEADING -->
+        <div class="leader-header slide-top">
+            <h2 class="leader-title">OUR LEADERSHIP TEAM</h2>
+            <div class="leader-line"></div>
+        </div>
+
+        <!-- TEAM CARDS -->
+        <div class="leader-cards">
+
+            <div class="leader-card slide-left">
+                <div class="leader-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3>Rahul Verma</h3>
+                <span>Chief Executive Officer</span>
+                <p>Driving innovation and strategic growth with over 15 years of media leadership experience.</p>
+            </div>
+
+            <div class="leader-card slide-top">
+                <div class="leader-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <h3>Ananya Sharma</h3>
+                <span>Chief Technology Officer</span>
+                <p>Leading digital transformation and scalable technology solutions for modern creators.</p>
+            </div>
+
+            <div class="leader-card slide-right">
+                <div class="leader-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3>Arjun Mehta</h3>
+                <span>Chief Operations Officer</span>
+                <p>Optimizing operations and building powerful partnerships across global markets.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const elements = document.querySelectorAll(".slide-left, .slide-right, .slide-top");
+
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }
+        });
+    },{threshold:0.3});
+
+    elements.forEach(el=>observer.observe(el));
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- ===============================
+        PRESTIGE MILESTONES
+=================================-->
+
+<section class="prestige-section">
+
+    <div class="prestige-container">
+
+        <!-- HEADING -->
+        <div class="prestige-header slide-top">
+            <h2>OUR JOURNEY OF EXCELLENCE</h2>
+            <div class="prestige-underline"></div>
+        </div>
+
+        <!-- MILESTONE STRIP -->
+        <div class="prestige-wrapper">
+
+            <div class="prestige-item slide-left">
+                <span class="prestige-year">2018</span>
+                <h3>Company Founded</h3>
+                <p>Started with a bold vision to empower digital creators worldwide.</p>
+            </div>
+
+            <div class="prestige-item slide-top">
+                <span class="prestige-year">2020</span>
+                <h3>100+ Creators</h3>
+                <p>Built strong partnerships with fast-growing content innovators.</p>
+            </div>
+
+            <div class="prestige-item slide-top">
+                <span class="prestige-year">2022</span>
+                <h3>Global Expansion</h3>
+                <p>Collaborated with international brands & scaled revenue systems.</p>
+            </div>
+
+            <div class="prestige-item slide-right">
+                <span class="prestige-year">2024</span>
+                <h3>Industry Recognition</h3>
+                <p>Recognized among the fastest growing media networks.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

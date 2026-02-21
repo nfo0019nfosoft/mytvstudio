@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TV Studio</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <img src="img/logo2.png" class="logo" alt="Logo">
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="channels.html">Channels Directory</a>
+                <a href="creators.html">Creators Join</a>
+                <a href="about.html">About Us </a>
+                <a href="brand.html">Brand Collaboration </a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="img/herobg4.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>India’s Fastest Growing Creator Network</h1>
+            <p>Where Creators Scale. Brands Win.</p>
+
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-primary">Join Network</a>
+                <a href="#" class="btn-outline">View Channels</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 80) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+
+
+
+
+
+
+
+    <section class="categories">
+
+        <div class="section-header">
+            <h2>EXPLORE OUR CHANNELS</h2>
+            <p>Discover powerful creators across every niche</p>
+        </div>
+
+        <div class="categories-grid">
+
+            <div class="category-card left">
+                <i class="fa-solid fa-film"></i>
+                <h3>Entertainment</h3>
+            </div>
+
+            <div class="category-card top">
+                <i class="fa-solid fa-newspaper"></i>
+                <h3>News</h3>
+            </div>
+
+            <div class="category-card right">
+                <i class="fa-solid fa-face-laugh"></i>
+                <h3>Comedy</h3>
+            </div>
+
+            <div class="category-card bottom">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Reels / Shorts</h3>
+            </div>
+
+            <div class="category-card left">
+                <i class="fa-solid fa-baseball"></i>
+                <h3>Sports</h3>
+            </div>
+
+            <div class="category-card right">
+                <i class="fa-solid fa-landmark"></i>
+                <h3>Politics</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <section class="trending-section">
+
+        <div class="trending-header">
+            <h2 class="zoom-heading">TRENDING CHANNELS</h2>
+            <p>Top creators growing fast 🚀</p>
+        </div>
+
+        <div class="trending-wrapper">
+
+            <button class="slider-btn slider-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+          <div class="trending-track">
+
+    <!-- 1 -->
+    <div class="trending-card">
+        <img src="https://i.pravatar.cc/150?img=41">
+        <h3>MrBeast</h3>
+        <p class="subscriber-count" data-target="230000000">0</p>
+        <a href="https://www.youtube.com/@MrBeast" target="_blank" class="yt-visit-btn">
+            <i class="fa-brands fa-youtube"></i> Visit
+        </a>
+    </div>
+
+    <!-- 2 -->
+    <div class="trending-card">
+        <img src="https://i.pravatar.cc/150?img=42">
+        <h3>T-Series</h3>
+        <p class="subscriber-count" data-target="260000000">0</p>
+        <a href="https://www.youtube.com/@TSeries" target="_blank" class="yt-visit-btn">
+            <i class="fa-brands fa-youtube"></i> Visit
+        </a>
+    </div>
+
+    <!-- 3 -->
+    <div class="trending-card">
+        <img src="https://i.pravatar.cc/150?img=43">
+        <h3>BBC News</h3>
+        <p class="subscriber-count" data-target="14000000">0</p>
+        <a href="https://www.youtube.com/@BBCNews" target="_blank" class="yt-visit-btn">
+            <i class="fa-brands fa-youtube"></i> Visit
+        </a>
+    </div>
+
+    <!-- 4 -->
+    <div class="trending-card">
+        <img src="https://i.pravatar.cc/150?img=44">
+        <h3>CNN</h3>
+        <p class="subscriber-count" data-target="16000000">0</p>
+        <a href="https://www.youtube.com/@CNN" target="_blank" class="yt-visit-btn">
+            <i class="fa-brands fa-youtube"></i> Visit
+        </a>
+    </div>
+
+    <!-- 5 -->
+    <div class="trending-card">
+        <img src="https://i.pravatar.cc/150?img=45">
+        <h3>CarryMinati</h3>
+        <p class="subscriber-count" data-target="40000000">0</p>
+        <a href="https://www.youtube.com/@CarryMinati" target="_blank" class="yt-visit-btn">
+            <i class="fa-brands fa-youtube"></i> Visit
+        </a>
+    </div>
+
+    <!-- 6 -->
+    <div class="trending-card">
+        <img src="https://i.pravatar.cc/150?img=46">
+        <h3>ESPN</h3>
+        <p class="subscriber-count" data-target="12000000">0</p>
+        <a href="https://www.youtube.com/@ESPN" target="_blank" class="yt-visit-btn">
+            <i class="fa-brands fa-youtube"></i> Visit
+        </a>
+    </div>
+
+    <!-- 7 -->
+    <div class="trending-card">
+        <img src="https://i.pravatar.cc/150?img=47">
+        <h3>ICC</h3>
+        <p class="subscriber-count" data-target="9000000">0</p>
+        <a href="https://www.youtube.com/@ICC" target="_blank" class="yt-visit-btn">
+            <i class="fa-brands fa-youtube"></i> Visit
+        </a>
+    </div>
+
+</div>
+
+            <button class="slider-btn slider-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        /* ================= SLIDER ================= */
+
+        const track = document.querySelector('.trending-track');
+        const nextBtn = document.querySelector('.slider-next');
+        const prevBtn = document.querySelector('.slider-prev');
+
+        if (nextBtn && prevBtn) {
+            nextBtn.addEventListener('click', () => {
+                track.scrollBy({ left: 320, behavior: 'smooth' });
+            });
+
+            prevBtn.addEventListener('click', () => {
+                track.scrollBy({ left: -320, behavior: 'smooth' });
+            });
+        }
+
+        /* ================= SUBSCRIBER COUNTER ================= */
+
+        const counters = document.querySelectorAll('.subscriber-count');
+
+        const counterObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = +el.getAttribute('data-target');
+                    let count = 0;
+
+                    const update = () => {
+                        const increment = target / 120;
+                        if (count < target) {
+                            count += increment;
+                            el.innerText =
+                                Math.floor(count).toLocaleString() + " Subscribers";
+                            requestAnimationFrame(update);
+                        } else {
+                            el.innerText =
+                                target.toLocaleString() + " Subscribers";
+                        }
+                    };
+
+                    update();
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        /* ================= CATEGORY CARD ANIMATION ================= */
+
+        const cards = document.querySelectorAll(".category-card");
+
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        cards.forEach(card => cardObserver.observe(card));
+
+    </script>
+
+
+
+
+
+
+
+<section class="why-section">
+
+    <div class="why-header">
+        <h2>WHY CHOOSE US </h2>
+        <p>Powering creators with strategy, protection & growth</p>
+    </div>
+
+    <div class="why-wrapper">
+
+        <div class="why-card up">
+            <i class="fa-solid fa-money-bill-trend-up"></i>
+            <h3>Monetization Support</h3>
+            <p>Optimized ad revenue systems for maximum earnings.</p>
+        </div>
+
+        <div class="why-card down">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Copyright Protection</h3>
+            <p>Automated monitoring & legal safety tools.</p>
+        </div>
+
+        <div class="why-card up">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Content Strategy</h3>
+            <p>Data-driven content roadmap & explosive viral growth strategies for creators.</p>
+        </div>
+
+        <div class="why-card down">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Brand Deals</h3>
+            <p>Direct collaborations with premium brands across multiple industries..</p>
+        </div>
+
+        <div class="why-card up">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Growth Analytics</h3>
+            <p>Real-time dashboards & performance insights to accelerate channel growth.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<section class="footer">
+
+    <div class="footer-wrapper">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-col fade-left">
+            <img src="img/logo2.png" class="footer-logo">
+            <p>
+                Empowering creators with monetization,
+                brand collaborations & digital growth.
+            </p>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-col fade-up">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="channels.html">Channels Directory</a></li>
+                <li><a href="creators.html">Creators Join</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="brand.html">Brand Collaboration</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-col fade-up">
+            <h3 class="footer-heading">Contact</h3>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    Flat No. 7, Bharat Nagar Colony,
+                    Road No.1, RL Nagar, Rampally,
+                    Medchal – 501301
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 91548 26565</span>
+            </div>
+             <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>tvmy6635@gmail.com</span>
+            </div>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="footer-col fade-right">
+            <h3 class="footer-heading">Follow Us</h3>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 My TV Studio. All Rights Reserved.
+    </div>
+
+</section>
+
+<script>
+const footerItems = document.querySelectorAll(".fade-left, .fade-right, .fade-up");
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{ threshold:0.3 });
+
+footerItems.forEach(el=>observer.observe(el));
+</script>
+
+
+
+
+
+<!-- FLOATING CONTACT BUTTONS -->
+<div class="floating-contact">
+
+    <!-- Phone -->
+    <a href="tel:+919154826565" class="float-phone">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919154826565" target="_blank" class="float-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TV Studio</title>
+    <link rel="stylesheet" href="css/channels.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+        <img src="img/logo2.png" class="logo" alt="Logo">
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="channels.html">Channels Directory</a>
+            <a href="creators.html">Creators Join</a>
+            <a href="about.html">About Us</a>
+            <a href="brand.html">Brand Collaboration</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+</header>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="channels.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<section class="directory">
+
+<h2 class="page-title zoom">CHANNELS DIRECTORY</h2>
+
+<div class="filters">
+<button class="filter active" data-filter="all">All</button>
+<button class="filter" data-filter="entertainment">Entertainment</button>
+<button class="filter" data-filter="news">News</button>
+<button class="filter" data-filter="comedy">Comedy</button>
+<button class="filter" data-filter="reels">Reels/Shorts</button>
+<button class="filter" data-filter="sports">Sports</button>
+<button class="filter" data-filter="politics">Politics</button>
+</div>
+<div class="grid">
+
+<!-- ENTERTAINMENT (3) -->
+<div class="card entertainment anim-left">
+<img src="https://i.pravatar.cc/150?img=11">
+<h3>MrBeast</h3>
+<p>Viral challenges & global entertainment.</p>
+<div class="subs" data-target="230000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@MrBeast" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card entertainment anim-top">
+<img src="https://i.pravatar.cc/150?img=12">
+<h3>T-Series</h3>
+<p>Official music & entertainment videos.</p>
+<div class="subs" data-target="260000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@TSeries" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card entertainment anim-right">
+<img src="https://i.pravatar.cc/150?img=13">
+<h3>Sony Music India</h3>
+<p>Latest Bollywood music releases.</p>
+<div class="subs" data-target="60000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@SonyMusicIndia" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<!-- NEWS (3) -->
+<div class="card news anim-left">
+<img src="https://i.pravatar.cc/150?img=14">
+<h3>BBC News</h3>
+<p>Global breaking news coverage.</p>
+<div class="subs" data-target="14000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@BBCNews" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card news anim-top">
+<img src="https://i.pravatar.cc/150?img=15">
+<h3>CNN</h3>
+<p>Latest world news & analysis.</p>
+<div class="subs" data-target="16000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@CNN" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card news anim-right">
+<img src="https://i.pravatar.cc/150?img=16">
+<h3>Al Jazeera English</h3>
+<p>International reports & debates.</p>
+<div class="subs" data-target="11000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@AlJazeeraEnglish" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<!-- COMEDY (3) -->
+<div class="card comedy anim-left">
+<img src="https://i.pravatar.cc/150?img=17">
+<h3>CarryMinati</h3>
+<p>Comedy roasts & entertainment.</p>
+<div class="subs" data-target="40000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@CarryMinati" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card comedy anim-top">
+<img src="https://i.pravatar.cc/150?img=18">
+<h3>BB Ki Vines</h3>
+<p>Comedy sketches & characters.</p>
+<div class="subs" data-target="26000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@BBKiVines" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card comedy anim-right">
+<img src="https://i.pravatar.cc/150?img=19">
+<h3>Zakir Khan</h3>
+<p>Stand-up comedy & storytelling.</p>
+<div class="subs" data-target="7000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@ZakirKhan" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<!-- SPORTS (2) -->
+<div class="card sports anim-left">
+<img src="https://i.pravatar.cc/150?img=20">
+<h3>ESPN</h3>
+<p>Sports highlights & analysis.</p>
+<div class="subs" data-target="12000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@ESPN" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card sports anim-right">
+<img src="https://i.pravatar.cc/150?img=21">
+<h3>ICC</h3>
+<p>Official cricket updates.</p>
+<div class="subs" data-target="9000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@ICC" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<!-- POLITICS (2) -->
+<div class="card politics anim-left">
+<img src="https://i.pravatar.cc/150?img=22">
+<h3>CNN Politics</h3>
+<p>Political news & discussions.</p>
+<div class="subs" data-target="3000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@CNNPolitics" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card politics anim-right">
+<img src="https://i.pravatar.cc/150?img=23">
+<h3>NDTV</h3>
+<p>Indian political news coverage.</p>
+<div class="subs" data-target="12000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@NDTV" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+<!-- REELS / SHORTS (2 Members) -->
+<div class="card reels anim-left">
+<img src="https://i.pravatar.cc/150?img=24">
+<h3>YouTube Shorts</h3>
+<p>Official trending short videos.</p>
+<div class="subs" data-target="35000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@YouTubeShorts" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+
+<div class="card reels anim-right">
+<img src="https://i.pravatar.cc/150?img=25">
+<h3>Shorts Break</h3>
+<p>Daily viral reels & short clips.</p>
+<div class="subs" data-target="12000000">0</div>
+<div class="btns">
+<a href="https://www.youtube.com/@ShortsBreak" target="_blank" class="yt">
+<i class="fa-brands fa-youtube"></i></a>
+<button class="collab">Collaborate</button>
+</div>
+</div>
+</div>
+</section>
+<script>
+
+/* ===============================
+   FILTER SYSTEM (STABLE VERSION)
+==================================*/
+
+const filters = document.querySelectorAll(".filter");
+const cards = document.querySelectorAll(".card");
+
+filters.forEach(button => {
+    button.addEventListener("click", () => {
+
+        // Remove active class safely
+        document.querySelectorAll(".filter").forEach(btn => 
+            btn.classList.remove("active")
+        );
+
+        button.classList.add("active");
+
+        const filterValue = button.getAttribute("data-filter");
+
+        cards.forEach(card => {
+
+            if (filterValue === "all" || card.classList.contains(filterValue)) {
+
+                card.style.display = "block";
+
+                setTimeout(() => {
+                    card.classList.remove("hide");
+                }, 10);
+
+            } else {
+
+                card.classList.add("hide");
+
+                setTimeout(() => {
+                    card.style.display = "none";
+                }, 400); // must match CSS transition time
+            }
+
+        });
+
+    });
+});
+
+
+/* ===============================
+   SUBSCRIBER COUNTER ANIMATION
+==================================*/
+
+const counters = document.querySelectorAll(".subs");
+
+const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const el = entry.target;
+            const target = +el.getAttribute("data-target");
+            let count = 0;
+
+            const updateCounter = () => {
+
+                const increment = target / 120;
+
+                if (count < target) {
+                    count += increment;
+                    el.innerText = 
+                        Math.floor(count).toLocaleString() + " Subscribers";
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    el.innerText = 
+                        target.toLocaleString() + " Subscribers";
+                }
+            };
+
+            updateCounter();
+            counterObserver.unobserve(el);
+        }
+
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => counterObserver.observe(counter));
+
+
+/* ===============================
+   SCROLL ANIMATIONS
+==================================*/
+
+const animatedElements = document.querySelectorAll(
+    ".anim-left, .anim-right, .anim-top, .zoom"
+);
+
+const scrollObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.2 });
+
+animatedElements.forEach(el => scrollObserver.observe(el));
+
+</script>
+
+</body>
+</html>
