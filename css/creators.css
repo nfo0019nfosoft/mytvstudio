@@ -29,11 +29,11 @@ body{
     justify-content:space-between;
     align-items:center;
 }
-.logo{
-    height:70px;
-    width: 70px;
-      /* fixed width required */
-     /* enables cropping */
+.logo img{
+    width:120px;
+    height:auto;
+    display:block;
+    margin-left: 30px;
    
 }
 
@@ -375,20 +375,29 @@ border: 1px solid red;
 /* ===============================
    MOBILE
 =================================*/
-
 @media(max-width:768px){
 
-.req-timeline::before{
-    left:20px;
-}
+    /* Move red vertical line */
+    .req-timeline::before{
+        left:18px;
+    }
 
-.req-item{
-    padding-left:70px;
-}
+    /* Item spacing */
+    .req-item{
+        padding-left:65px;
+        margin-bottom:50px;
+    }
 
-.req-number{
-    left:5px;
-}
+    /* Number Circle */
+    .req-number{
+        position:absolute;
+        left:0;
+        top:0;
+        width:28px;
+        height:28px;
+        font-size:13px;
+        z-index:5;   /* Important */
+    }
 
 }
 
