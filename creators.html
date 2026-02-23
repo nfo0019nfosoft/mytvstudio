@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/creators.css">
  <link rel="icon" type="image/png" href="img/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -295,11 +298,6 @@ animatedElements.forEach(el=>observer.observe(el));
 
 
 
-
-
-
-
-
 <section class="apply-section">
 
     <div class="apply-container">
@@ -317,52 +315,85 @@ animatedElements.forEach(el=>observer.observe(el));
         <!-- FORM BELOW -->
         <div class="apply-form-box slide-right">
 
-            <form>
+           <form id="applicationForm">
 
-                <div class="form-group">
-                    <label>Channel Link</label>
-                    <input type="url" placeholder="Enter YouTube Channel URL" required>
-                </div>
+    <div class="form-group">
+        <label>Channel Link</label>
+        <input type="url" name="channel" required>
+    </div>
 
-                <div class="form-group">
-                    <label>Subscribers</label>
-                    <input type="number" placeholder="Enter Subscriber Count" required>
-                </div>
+    <div class="form-group">
+        <label>Subscribers</label>
+        <input type="number" name="subscribers" required>
+    </div>
 
-                <div class="form-group">
-                    <label>Category</label>
-                    <select required>
-                        <option value="">Select Category</option>
-                        <option>Entertainment</option>
-                        <option>News</option>
-                        <option>Comedy</option>
-                        <option>Reels / Shorts</option>
-                        <option>Sports</option>
-                        <option>Politics</option>
-                    </select>
-                </div>
+    <div class="form-group">
+        <label>Category</label>
+        <select name="category" required>
+            <option value="">Select Category</option>
+            <option>Entertainment</option>
+            <option>News</option>
+            <option>Comedy</option>
+            <option>Reels / Shorts</option>
+            <option>Sports</option>
+            <option>Politics</option>
+        </select>
+    </div>
 
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="Enter Email Address" required>
-                </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required>
+    </div>
 
-                <div class="form-group">
-                    <label>Phone</label>
-                    <input type="tel" placeholder="Enter Phone Number" required>
-                </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" name="phone" required>
+    </div>
 
-                <button type="submit" class="apply-btn">
-                    Submit Application
-                </button>
+    <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+    </div>
 
-            </form>
+    <button type="submit" class="apply-btn">
+        Submit Application
+    </button>
 
+</form>
         </div>
 
     </div>
 
 </section>
+
+
+
+<script>
+(function(){
+    emailjs.init("hqT2hQ58TTzmM-649");
+})();
+
+document.getElementById("applicationForm")
+.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    emailjs.sendForm(
+        "service_o91au8a",
+        "template_hqu4lwq",
+        this
+    )
+    .then(function(){
+        alert("Application Submitted Successfully 🚀");
+        document.getElementById("applicationForm").reset();
+    }, function(error){
+        alert("Submission Failed ❌");
+        console.log(error);
+    });
+});
+</script>
+
+
+
 
 
 
@@ -372,7 +403,7 @@ animatedElements.forEach(el=>observer.observe(el));
 document.addEventListener("DOMContentLoaded", function(){
 
     const animatedElements = document.querySelectorAll(
-        ".slide-left, .slide-right, .zoom"
+        ".slide-left, .slide-right, .zoom "
     );
 
     const observer = new IntersectionObserver((entries)=>{
@@ -429,13 +460,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+      
+
+
 <section class="footer">
 
     <div class="footer-wrapper">
 
         <!-- COLUMN 1 -->
         <div class="footer-col slide-left">
-            <img src="img/logo2.png" class="footer-logo">
+            <img src="img/logo2.png" class="footer-logo" alt="MyTV Logo">
             <p>
                 Empowering creators with monetization,
                 brand collaborations & digital growth.
@@ -443,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function(){
         </div>
 
         <!-- COLUMN 2 -->
-        <div class="footer-col slide-left">
+        <div class="footer-col zoom">
             <h3 class="footer-heading">Quick Links</h3>
             <ul class="quick-links">
                 <li><a href="index.html">Home</a></li>
@@ -455,7 +489,7 @@ document.addEventListener("DOMContentLoaded", function(){
         </div>
 
         <!-- COLUMN 3 -->
-        <div class="footer-col slide-right">
+        <div class="footer-col zoom">
             <h3 class="footer-heading">Contact</h3>
 
             <div class="contact-item">
@@ -471,9 +505,10 @@ document.addEventListener("DOMContentLoaded", function(){
                 <i class="fa-solid fa-phone"></i>
                 <span>+91 91548 26565</span>
             </div>
-             <div class="contact-item">
+
+            <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
-                <span>tvmy6635@gmail.com</span>
+                <span>info@mytvstudio.com</span>
             </div>
         </div>
 
@@ -482,9 +517,17 @@ document.addEventListener("DOMContentLoaded", function(){
             <h3 class="footer-heading">Follow Us</h3>
 
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@Mytv-Studio" target="_blank" class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/mytv.studio/" target="_blank" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/mytvstudio/" target="_blank" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
             </div>
         </div>
 
@@ -495,6 +538,9 @@ document.addEventListener("DOMContentLoaded", function(){
     </div>
 
 </section>
+
+
+
 
 
 

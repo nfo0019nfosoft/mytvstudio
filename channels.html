@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/channels.css">
  <link rel="icon" type="image/png" href="img/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -387,6 +389,7 @@ animatedElements.forEach(el => scrollObserver.observe(el));
 
 
 
+    
 
 <section class="footer">
 
@@ -394,7 +397,7 @@ animatedElements.forEach(el => scrollObserver.observe(el));
 
         <!-- COLUMN 1 -->
         <div class="footer-col fade-left">
-            <img src="img/logo2.png" class="footer-logo">
+            <img src="img/logo2.png" class="footer-logo" alt="MyTV Logo">
             <p>
                 Empowering creators with monetization,
                 brand collaborations & digital growth.
@@ -430,9 +433,10 @@ animatedElements.forEach(el => scrollObserver.observe(el));
                 <i class="fa-solid fa-phone"></i>
                 <span>+91 91548 26565</span>
             </div>
-             <div class="contact-item">
+
+            <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
-                <span>tvmy6635@gmail.com</span>
+                <span>info@mytvstudio.com</span>
             </div>
         </div>
 
@@ -441,9 +445,17 @@ animatedElements.forEach(el => scrollObserver.observe(el));
             <h3 class="footer-heading">Follow Us</h3>
 
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@Mytv-Studio" target="_blank" class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/mytv.studio/" target="_blank" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/mytvstudio/" target="_blank" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
             </div>
         </div>
 
@@ -454,6 +466,9 @@ animatedElements.forEach(el => scrollObserver.observe(el));
     </div>
 
 </section>
+
+
+
 
 <script>
 const footerItems = document.querySelectorAll(".fade-left, .fade-right, .fade-up");
