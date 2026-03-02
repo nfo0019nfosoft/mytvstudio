@@ -1045,3 +1045,33 @@ body{
         transform:translateY(0px) rotate(0deg);
     }
 }
+
+
+
+
+
+
+
+
+
+
+.footer-content{
+  color:#ffffff;
+  font-size:14px;
+}
+
+.brand-name{
+  font-weight:500;
+}
+
+.developer-link{
+  color:#00e6e6;   /* cyan highlight like screenshot */
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s ease;
+}
+
+.developer-link:hover{
+  text-decoration:none;
+  color:#ffffff;
+}
